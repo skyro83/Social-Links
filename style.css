@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body
+{
+    background-color: hsl(0, 0%, 8%);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+div
+{
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column; /* Ajoutez cette ligne */
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 45vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+div img
+{
+    border-radius: 50%;
+    height: 10vh;
+    width: 10vh;
+}
+
+div h1
+{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem; /* Add this line to reduce the space */
+}
+
+div h2
+{
+    color: hsl(75, 94%, 57%);
+    font-size: 0.9rem;
+    margin-top: 0.5rem; /* Add this line to reduce the space */
+}
+
+div p
+{
+    color: hsl(0, 3%, 66%);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+div button {
+    width: 30vh; /* Définis une largeur fixe pour tous les boutons */
+}
+
+div #Github,
+div #Frontend,
+div #LinkedIn,
+div #Twitter,
+div #Instagram {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    border: 0px solid hsl(0, 0%, 100%);
+    padding: 0.8rem 0; /* Réinitialise le padding pour ajuster la largeur du bouton */
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition-duration: 0.4s;
+}
+
+div #Github:hover,
+div #Frontend:hover,
+div #LinkedIn:hover,
+div #Twitter:hover,
+div #Instagram:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+    border: 0px solid hsl(0, 0%, 100%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 375px) {
+    div
+    {
+        height: 84vh;
+        width: 90vw;
+    }
+    
+}
